@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Openwrt by mysqto</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Openwrt</h1>
+        <p>Some OpenWRT pkg usefull For Chinese Users</p>
+
+        <p class="view"><a href="https://github.com/mysqto/openwrt">View the Project on GitHub <small>mysqto/openwrt</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mysqto/openwrt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mysqto/openwrt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mysqto/openwrt">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="welcome-to-mysqtos-openwrt-mirror" class="anchor" href="#welcome-to-mysqtos-openwrt-mirror" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Mysqto's OpenWrt Mirror.</h3>
+
+<p>This is the personal OpenWrt package mirror maintained by <a href="https://github.com/mysqto">@Mysqto</a>. current hosted the following packages for ramips(Xiaomi Wifi Mini):</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/semigodking/redsocks">redsocks</a></td>
+<td>redsocks(With OpenSSL) for OpenWRT</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clowwindy/ChinaDNS">openwrt-chinadns</a></td>
+<td>ChinaDNS-C for OpenWRT</td>
+</tr>
+<tr>
+<td><a href="https://github.com/clowwindy/ShadowVPN">openwrt-shadowvpn</a></td>
+<td>ShadowVPN for OpenWrt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/semigodking/redsocks">openwrt-dnsmasq</a></td>
+<td>Dnsmasq Patch &amp; Makefile for OpenWrt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shadowsocks/openwrt-shadowsocks">openwrt-shadowsocks</a></td>
+<td>Shadowsocks-libev for OpenWrt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/aa65535/openwrt-dist-luci">openwrt-dist-luci</a></td>
+<td>LuCI Applications for OpenWrt-dist</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="uasge" class="anchor" href="#uasge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Uasge</h3>
+
+<p>Add the following lines to your <code>/etc/opkg.conf</code> file</p>
+
+<pre><code>src/gz openwrt_dist http://openwrt-dist.kxswq.ml/releases/ramips/packages
+src/gz openwrt_dist_luci http://openwrt-dist.kxswq.ml/releases/luci/packages
+</code></pre>
+
+<p>And run 'opkg update' to update the package source.</p>
+
+<p>Enjoy the free internet.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mysqto">mysqto</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
