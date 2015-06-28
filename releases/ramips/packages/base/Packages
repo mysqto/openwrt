@@ -1,0 +1,328 @@
+Package: ShadowVPN
+Version: 0.1.6
+Depends: libc, kmod-tun, ip
+Source: package/ShadowVPN/openwrt
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 47174
+Filename: ShadowVPN_0.1.6_ramips_24kec.ipk
+Size: 47670
+MD5Sum: e21d721b51cad5a779d18c73783ae1df
+SHA256sum: aed8f4dc6850144edf3953d6a591540ae067be2a2065a38ecac672784594ebb7
+Description:  A fast, safe VPN based on libsodium
+
+Package: libevent2-core
+Version: 2.0.22-1
+Depends: libc
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 58649
+Filename: libevent2-core_2.0.22-1_ramips_24kec.ipk
+Size: 59723
+MD5Sum: c97288c3d0f89cc4c62b4bbc659de554
+SHA256sum: c238ab0d3740e70c7229561e8827c1c299cdeff511a4176697a7e9a5f637d311
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent core shared library for the event,
+ buffer & utility functions.
+
+Package: libevent2-extra
+Version: 2.0.22-1
+Depends: libc
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 49625
+Filename: libevent2-extra_2.0.22-1_ramips_24kec.ipk
+Size: 50709
+MD5Sum: 49860cc8a00c63c34242301f787f5c20
+SHA256sum: ea4edd88eb42f56c6127c182e18e3ba604ceec473762321da17c83051138ec4a
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent extra shared library for specific
+ protocols including HTTP, DNS & RPC.
+
+Package: libevent2-openssl
+Version: 2.0.22-1
+Depends: libc, libopenssl
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 8299
+Filename: libevent2-openssl_2.0.22-1_ramips_24kec.ipk
+Size: 9340
+MD5Sum: 6f972c9a880b18d6d707bf1b3c37a49e
+SHA256sum: c4f6bbfc9da5dadaee4e49084ab6beb136667ebb2b2be6493aced404d9a02b2c
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent OpenSSL shared library for encrypted
+ bufferevents.
+
+Package: libevent2-pthreads
+Version: 2.0.22-1
+Depends: libc, libpthread
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 2777
+Filename: libevent2-pthreads_2.0.22-1_ramips_24kec.ipk
+Size: 3791
+MD5Sum: c89cca1291a41e74eb57496eac1fefe3
+SHA256sum: 6d4856697952095a73f16c82b99744d15c0eb4dfbe089ea11db28fbcea122476
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent Pthreads shared library for
+ threading & locking.
+
+Package: libevent2
+Version: 2.0.22-1
+Depends: libc
+Source: package/libs/libevent2
+License: BSD-3-Clause
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 103004
+Filename: libevent2_2.0.22-1_ramips_24kec.ipk
+Size: 103939
+MD5Sum: ee3aa9afe75e6ed90946dc6ce6012158
+SHA256sum: 3dcca0769c8a805b8d311be6413cb956ecdde5152eaa30012b9c240dcb8c7c20
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent shared library historically
+ containing both the core & extra libraries.
+
+Package: libopenssl
+Version: 1.0.2c-1
+Depends: libc, zlib
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: libs
+Architecture: ramips_24kec
+Installed-Size: 716209
+Filename: libopenssl_1.0.2c-1_ramips_24kec.ipk
+Size: 709559
+MD5Sum: cf8e15d3232d75f2b01565fa88083239
+SHA256sum: 6ab4f31ba7107c77ce8403d597f1611e724077b64888dad2c307268db9d5c90e
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: luci-app-chinadns
+Version: 1.3.2-1
+Depends: libc
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1877
+Filename: luci-app-chinadns_1.3.2-1_all.ipk
+Size: 2711
+MD5Sum: b6d17102dfed6d42343f2f2e88dbb484
+SHA256sum: 7179732f4d83781c4291fbd8d0d8ab29db1cee473f391a2a765a31f0cb30e527
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-redsocks2
+Version: 1.3.2-1
+Depends: libc
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1455
+Filename: luci-app-redsocks2_1.3.2-1_all.ipk
+Size: 2296
+MD5Sum: 7c113904b8aa4d92c5ad1d673d461644
+SHA256sum: 8217bd346451133998404ed34f602f834dae9626fd91f77aee17b5622d47d436
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-app-shadowsocks-spec
+Version: 1.3.2-1
+Depends: libc
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 2391
+Filename: luci-app-shadowsocks-spec_1.3.2-1_all.ipk
+Size: 3252
+MD5Sum: f08810e18f2344879cdcad45a2406594
+SHA256sum: 9e8a5acecc400639caebab740635ff5b72aed4d73f65ad0d30c78163edc5101a
+Description:  LuCI Support for shadowsocks-libev-spec.
+
+Package: luci-app-shadowvpn
+Version: 1.3.2-1
+Depends: libc
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: aa65535 <aa65535@live.com>
+Architecture: all
+Installed-Size: 1711
+Filename: luci-app-shadowvpn_1.3.2-1_all.ipk
+Size: 2546
+MD5Sum: 3f859ce5203febc63b2d67c4f0ab0571
+SHA256sum: ea036c8c4d246e00bc4a7a09a226716d61bbdb40df15fb5f47b053ca868c22be
+Description:  LuCI Support for ShadowVPN.
+
+Package: openssl-util
+Version: 1.0.2c-1
+Depends: libc, libopenssl
+Source: package/libs/openssl
+License: OpenSSL
+LicenseFiles: LICENSE
+Section: utils
+Architecture: ramips_24kec
+Installed-Size: 198578
+Filename: openssl-util_1.0.2c-1_ramips_24kec.ipk
+Size: 198604
+MD5Sum: 5d77b6f98cce11c1cd24a76a23c1064d
+SHA256sum: 9a2ecb5dd2a289b6a65acec60fe2f59a759479a4cbabccfc30b15edf2190d16e
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the Secure
+ Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
+ as a full-strength general purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: redsocks2
+Version: 0.60-2
+Depends: libc, libevent2
+Source: package/redsocks2
+License: GPLv2
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Zhuofei Wang <SemigodKing@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 47819
+Filename: redsocks2_0.60-2_ramips_24kec.ipk
+Size: 48766
+MD5Sum: 43fa9aaae42ba8c249637ba30c899a03
+SHA256sum: b56c2546b47c4fd21f2ad33ade8f84990035d59c6b021ca4f88bba6aa6bdcfb4
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
+
+Package: shadowsocks-libev-polarssl
+Version: 2.2.2-1
+Depends: libc, libpolarssl
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 168808
+Filename: shadowsocks-libev-polarssl_2.2.2-1_ramips_24kec.ipk
+Size: 168458
+MD5Sum: 001b4c40dea6d466204c52d36f79c50f
+SHA256sum: 880ae7aa40f6b9ecb90b9d06be9cc8bed57fcbd13d17d3eb47a76b57799b38fa
+Description:  Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev-spec-polarssl
+Version: 2.2.2-1
+Depends: libc, libpolarssl, resolveip, ipset, ip, iptables-mod-tproxy
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 128318
+Filename: shadowsocks-libev-spec-polarssl_2.2.2-1_ramips_24kec.ipk
+Size: 128269
+MD5Sum: 62f1033bc71ecec504a16f06d6e7b5d1
+SHA256sum: 707d1e489298c97ac4d665c1f2be0561f1004bb16d33d06f6d6a879db850364c
+Description:  Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev-spec
+Version: 2.2.2-1
+Depends: libc, libopenssl, resolveip, ipset, ip, iptables-mod-tproxy
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 127096
+Filename: shadowsocks-libev-spec_2.2.2-1_ramips_24kec.ipk
+Size: 127463
+MD5Sum: 40ed536e229f132df1b8693d3beabc5b
+SHA256sum: 8aff9654f7a562b70fd2450ca0939518eec19f1d45b10c83ed3a1d6356ff935e
+Description:  Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 2.2.2-1
+Depends: libc, libopenssl
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 167044
+Filename: shadowsocks-libev_2.2.2-1_ramips_24kec.ipk
+Size: 167486
+MD5Sum: e57ecf9eac7ef279b2dd12a40680de45
+SHA256sum: aa14a7a1b5f42ec3e99c8fad837fa61baa24e9f2928f85df08729aa49e00d9f8
+Description:  Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+
