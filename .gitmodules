@@ -3,7 +3,7 @@
 	url = https://github.com/clowwindy/ShadowVPN.git
 [submodule "ChinaDNS"]
 	path = ChinaDNS
-	url = https://github.com/clowwindy/ChinaDNS.git
+	url = https://github.com/aa65535/openwrt-chinadns.git
 [submodule "redsocks2"]
 	path = redsocks2
 	url = https://github.com/aa65535/openwrt-redsocks2.git
