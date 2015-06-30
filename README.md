@@ -12,10 +12,10 @@ This is the personal OpenWrt package mirror maintained by [@Mysqto](https://gith
  [openwrt-dist-luci][6]   | LuCI Applications for OpenWrt-dist
 
 ### Uasge
-Add the following line to your `/etc/opkg.conf` file
+Add the following line to your `/etc/opkg.conf` file starting with something like `src/gz openwrt_dist`
 
 ```
-src/gz openwrt_dist http://dist.openwrt.link/releases/ramips/packages/base
+http://dist.openwrt.link/releases/ramips/mt7620/packages/base
 ```
 
 And run 'opkg update' to update the package source.
