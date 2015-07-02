@@ -1,0 +1,133 @@
+#!/bin/sh
+
+# The MIT License (MIT)
+# 
+# Copyright (c) 2015 Chen Lei
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+BUILD_DIR=$HOME/openwrt_ramips
+OPENWRT_SDK_DIR=$BUILD_DIR/sdk
+OPENWRT_SDK_FILE='OpenWrt-SDK*.tar.bz2'
+
+CHINA_DNS_PKG=ChinaDNS*.ipk
+
+
+# delivery related configurations
+# I use github for delivery, remote repo for github, use ssh link
+DLVR_REPO=git@github.com:mysqto/openwrt.git
+
+# local repo where the checked out delivery repo to be stored
+DLVR_LOCAL=dist.openwrt.link
+
+# build related parameters
+OPENWRT_BASE_URL=https://downloads.openwrt.org/snapshots/trunk
+ARCH=ramips
+SOC=mt7620
+
+if [ -d "$BUILD_DIR" ]; then
+	# cleanup working directory
+	rm -rf $BUILD_DIR
+fi
+
+# create working directory and change to workding directory
+mkdir -p $BUILD_DIR
+cd $BUILD_DIR
+
+wget -nd -r -l1 --no-parent -A $OPENWRT_SDK_FILE $OPENWRT_BASE_URL/$ARCH/$SOC/ 
+
+if [ ! -f $OPENWRT_SDK_FILE ]; then
+	echo "OpenWrt SDK file download falied, build bot will exit!"
+	exit 1
+fi
+
+echo "decompressing OpenWrt SDK..."
+mkdir -p $OPENWRT_SDK_DIR
+tar xjf $OPENWRT_SDK_FILE -C $OPENWRT_SDK_DIR --strip-components=1
+
+status=$?
+
+if [ $status -ne 0 ]; then
+	echo "OpenWrt SDK decompress failed, build bot will exit!"
+	exit 1
+fi
+
+echo "changing working directory to OpenWrt SDK"
+cd $OPENWRT_SDK_DIR
+
+echo "creating temp working directory"
+mkdir .temp
+
+echo "clone openwrt official repo to get latest software info"
+git clone git://git.openwrt.org/openwrt.git .temp/openwrt
+
+echo "copy libev & openssl to package directory"
+mkdir -p package/libs
+cp -R .temp/openwrt/package/libs/libevent2 package/libs/
+cp -R .temp/openwrt/package/libs/openssl package/libs/
+
+git clone https://github.com/clowwindy/ShadowVPN.git package/ShadowVPN
+git clone https://github.com/aa65535/openwrt-chinadns.git package/chinadns
+git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
+git clone https://github.com/aa65535/openwrt-dist-luci.git package/openwrt-dist-luci
+git clone https://github.com/aa65535/openwrt-redsocks2.git package/redsocks2
+git clone https://github.com/aa65535/openwrt-dnsmasq.git package/dnsmasq
+
+echo "building packages..."
+make V=99
+
+if [ ! -f ./bin/$ARCH/packages/base/$CHINA_DNS_PKG ]; then
+	echo "chinadns build failed, checking version."
+
+	chinadns_file=`find . -name 'chinadns.c'`
+	grep -l '\<sys\/param\.h\>' $chinadns_file
+
+	status=$?
+
+	if [ $status -ne 0 ]; then
+		echo "the MAX bug find in chinadns.c, fix it & rebuild"
+		sed -i '/<sys\/time\.h\>/a #include\ \<sys\/param\.h\>' $chinadns_file
+
+		status=$?
+		if [ $status -ne 0 ]; then
+			echo "edit file failed, stop build"
+			exit 1
+		fi
+	fi
+fi
+
+# build again, to see whether the chinadns problem fixed
+make V=99
+
+status=$?
+
+if [ $status -ne 0 ]; then
+	echo "build failed, exit anyway since nothing I can do now"
+fi
+
+echo "delivering build package now"
+git clone -b gh-pages $DLVR_REPO $DLVR_LOCAL
+
+rm -rf $DLVR_LOCAL/releases/$ARCH/$SOC/packages
+cp -R ./bin/$ARCH/packages $DLVR_LOCAL/releases/$ARCH/$SOC/ 
+
+cd $DLVR_LOCAL
+git add -A
+git commit -a -m "daily build: `date +\"%d/%m/%Y\"`, build time: `date +\"%H:%M:%S\"`"
+git push

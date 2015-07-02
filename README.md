@@ -15,7 +15,7 @@ This is the personal OpenWrt package mirror maintained by [@Mysqto](https://gith
 Add the following line to your `/etc/opkg.conf` file
 
 ```
-src/gz openwrt_dist http://dist.openwrt.link/releases/ramips/packages/base
+src/gz openwrt_dist http://dist.openwrt.link/releases/ramips/mt7620/packages/base
 ```
 
 And run 'opkg update' to update the package source.
