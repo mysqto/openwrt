@@ -90,7 +90,7 @@ git clone https://github.com/aa65535/openwrt-redsocks2.git package/redsocks2
 git clone https://github.com/aa65535/openwrt-dnsmasq.git package/dnsmasq
 
 echo "building packages..."
-make V=99
+make V=s
 
 if [ ! -f ./bin/$ARCH/packages/base/$CHINA_DNS_PKG ]; then
 	echo "chinadns build failed, checking version."
@@ -101,30 +101,36 @@ if [ ! -f ./bin/$ARCH/packages/base/$CHINA_DNS_PKG ]; then
 	status=$?
 
 	if [ $status -ne 0 ]; then
-		echo "the MAX bug find in chinadns.c, fix it & rebuild"
+		echo "the MAX bug find in chinadns.c, fix it & rebuild!"
 		sed -i '/<sys\/time\.h\>/a #include\ \<sys\/param\.h\>' $chinadns_file
 
 		status=$?
 		if [ $status -ne 0 ]; then
-			echo "edit file failed, stop build"
+			echo "edit file failed, stop build!"
 			exit 1
 		fi
 	fi
 fi
 
 # build again, to see whether the chinadns problem fixed
-make V=99
+make V=s
 
 status=$?
 
 if [ $status -ne 0 ]; then
-	echo "build failed, exit anyway since nothing I can do now"
+	echo "build failed, exit anyway since nothing I can do now!"
 fi
 
 echo "delivering build package now"
 git clone -b gh-pages $DLVR_REPO $DLVR_LOCAL
 
 rm -rf $DLVR_LOCAL/releases/$ARCH/$SOC/packages
+
+if [ ! -d $DLVR_LOCAL/releases/$ARCH/$SOC ]; then
+	echo "something wrong with the release dir, recreate it."
+	mkdir -p $DLVR_LOCAL/releases/$ARCH/$SOC
+fi
+
 cp -R ./bin/$ARCH/packages $DLVR_LOCAL/releases/$ARCH/$SOC/ 
 
 cd $DLVR_LOCAL
