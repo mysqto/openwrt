@@ -9,9 +9,9 @@ Maintainer: clowwindy <clowwindy42@gmail.com>
 Architecture: ramips_24kec
 Installed-Size: 26349
 Filename: ChinaDNS_1.3.2-3_ramips_24kec.ipk
-Size: 26630
-MD5Sum: b749f310375a701aa9dd038ad413e188
-SHA256sum: dbdcf37cf626bb294e68099c418c6aa8a455e4c2909fe00582e132d75869d334
+Size: 26632
+MD5Sum: 2ca038c1ad547e2a983206dd3544d3d2
+SHA256sum: 9ded9d70e6f8c9ea2973cd4b6afa0ad6d3c9dab6b33eb0778f551b4873ad0989
 Description:  A DNS forwarder that ignores incorrect(you knew it) responses.
 
 Package: libevent2-core
@@ -24,9 +24,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 59337
 Filename: libevent2-core_2.0.22-1_ramips_24kec.ipk
-Size: 60391
-MD5Sum: 8a85f0fd330324f20a8a41f18152e4ba
-SHA256sum: 54ce1bb6b8bbb05b38995b5aea80d4fe159aed53fe0b9e420e27a605bf8b7ec0
+Size: 60378
+MD5Sum: 47a69f8cbf941ac3acaf4a6a1bb57feb
+SHA256sum: ae730ca50c51a457b848e57d465208fcaa6e79402e65d5c572061f1a48cfdfee
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -48,11 +48,11 @@ License: BSD-3-Clause
 Section: libs
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 50714
+Installed-Size: 50713
 Filename: libevent2-extra_2.0.22-1_ramips_24kec.ipk
-Size: 51784
-MD5Sum: 78a51edc4b578029f8a8be5ea677a6d2
-SHA256sum: 909eeb9dbfc6ea46c173bd3343be08cf145df1b1adf373bb5f0b6d49c07083da
+Size: 51778
+MD5Sum: 95849ee2a85a914c3b9f40f3ab6b5986
+SHA256sum: 4397e12e34f28c92191b75e0a236ce87a6f5e695c8ba11be94465f5efb53d374
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -74,11 +74,11 @@ License: BSD-3-Clause
 Section: libs
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 8522
+Installed-Size: 8521
 Filename: libevent2-openssl_2.0.22-1_ramips_24kec.ipk
-Size: 9562
-MD5Sum: a514c04d9fdc9d82659c3aee67c327d0
-SHA256sum: ca5abc7de4af6b24884ab2fe15c23c87c5798c2d1b121bf96a464b15ad8975fc
+Size: 9558
+MD5Sum: cb361580b283422a08fc6715a33aa7d1
+SHA256sum: 8a3355f0897564527082376e07745facd58a6f5e950d827940c398cc440985f1
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -100,11 +100,11 @@ License: BSD-3-Clause
 Section: libs
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2764
+Installed-Size: 2763
 Filename: libevent2-pthreads_2.0.22-1_ramips_24kec.ipk
-Size: 3752
-MD5Sum: e9026fc3b19b6f6a36a54ef80afb4a32
-SHA256sum: ae79cb89cf3ba0f37b079bb74abf18dec48a80e1bbea287920a1f5cab8c98128
+Size: 3758
+MD5Sum: 32184db87a0a7d0bc67fb3cf9c79cc66
+SHA256sum: fa71f697ab8cc31722a739f0ca181c827d71825d616885c9dc6a7a36b89753f7
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -126,11 +126,11 @@ License: BSD-3-Clause
 Section: libs
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 105024
+Installed-Size: 105027
 Filename: libevent2_2.0.22-1_ramips_24kec.ipk
-Size: 105986
-MD5Sum: cc6c6a74467f2beb9b1829f242399193
-SHA256sum: cb7797b9c7149aaa7b3dd5002e096f0218de89bda41b47fffa36498b9cff4b40
+Size: 105988
+MD5Sum: ad969553fa183dbebc2f6dd4140647f1
+SHA256sum: 093dd1d81ce821112ec667e6277b1253fe33975757a8b7a5471778bdc09e2627
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -152,11 +152,11 @@ License: OpenSSL
 LicenseFiles: LICENSE
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 740548
+Installed-Size: 740542
 Filename: libopenssl_1.0.2e-1_ramips_24kec.ipk
-Size: 733974
-MD5Sum: 4bfbc047f7a275aac620258d5ababf76
-SHA256sum: eae07fcdd393e8416b6fa55de17c95e89b5d52364c296b9af4fbbfd2fe7a1975
+Size: 733982
+MD5Sum: d1978c21be775364283291320b680e44
+SHA256sum: 3274997fae2db9e0e3ebc3bf8980e4e88ad57ebb95da56da5a27aadecb536d8f
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the Secure
  Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
@@ -172,11 +172,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 1521
+Installed-Size: 1522
 Filename: luci-app-chinadns_1.3.8-1_all.ipk
-Size: 2374
-MD5Sum: 7b798366564ab12780400e7b925ce945
-SHA256sum: c15cd959e6eda804f8b42cc6c138dd41029766cdf0fad2bfab1e2f414081d82f
+Size: 2379
+MD5Sum: a442a43a9061028cf4d2018e48d246ed
+SHA256sum: 7a1d1415863ab4492625b66ba9c0f2222383360137778da9e7a806fe77dc9ff2
 Description:  LuCI Support for ChinaDNS.
 
 Package: luci-app-redsocks2
@@ -188,11 +188,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 1463
+Installed-Size: 1464
 Filename: luci-app-redsocks2_1.3.8-1_all.ipk
-Size: 2312
-MD5Sum: 8e077a4865242abc6e25f4a60fb2fc8e
-SHA256sum: f546e8b45929afb803edf7e3bd84a60dd7eeb35a6261140b0ed7ad0aab06e156
+Size: 2320
+MD5Sum: 212cac1358049e82c99e61d81a17d753
+SHA256sum: 5ed8306b5bfc792186a029c906fdafba60f966d29e892a1bd5908823dd225a77
 Description:  LuCI Support for RedSocks2.
 
 Package: luci-app-shadowsocks-spec
@@ -204,11 +204,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 2873
+Installed-Size: 2874
 Filename: luci-app-shadowsocks-spec_1.3.8-1_all.ipk
-Size: 3739
-MD5Sum: b5151e8eaeb002cf3f20e773816fbe84
-SHA256sum: 10c817f0095bc3b23d63a6e84d577422cfcade8097cb058fefe07bc300bd1915
+Size: 3745
+MD5Sum: 6940cf4a27c83e2fe9d083a58ea53924
+SHA256sum: 82ff2135bbf7cec1fcb60b8854add6b2face803417f190edd79550a7a06ee01f
 Description:  LuCI Support for shadowsocks-libev-spec.
 
 Package: luci-app-shadowvpn
@@ -220,11 +220,11 @@ LicenseFiles: LICENSE
 Section: luci
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: all
-Installed-Size: 1871
+Installed-Size: 1870
 Filename: luci-app-shadowvpn_1.3.8-1_all.ipk
-Size: 2719
-MD5Sum: 42c41126909587b0cf289e84f73b9cf6
-SHA256sum: d88b767360c1987606b6f7953168dd783132d901ce57867ce9c8c2b1e33f139f
+Size: 2718
+MD5Sum: 96ec7affb7f13c69d5d9975d711eb0da
+SHA256sum: 5bf674ae8f989314417064b7e13bac8bf1dd53accac4ab81ce77008c7bb221e9
 Description:  LuCI Support for ShadowVPN.
 
 Package: openssl-util
@@ -237,9 +237,9 @@ Section: utils
 Architecture: ramips_24kec
 Installed-Size: 200291
 Filename: openssl-util_1.0.2e-1_ramips_24kec.ipk
-Size: 200220
-MD5Sum: 8ff4a1b078b773a4344b4145f0b559f3
-SHA256sum: e1793359e39ffb4db11e72ecbe4304b2e503585717bdd6dfedfa4a94a74d1bbd
+Size: 200203
+MD5Sum: 524b15b8792dc33102569bd21ae8a729
+SHA256sum: 1f58fe547f5dc3087f5a7192fbcb8511d43a21ff9931219286fb4fd0963e80ae
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the Secure
  Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
@@ -255,11 +255,11 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: Zhuofei Wang <SemigodKing@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 49881
+Installed-Size: 49884
 Filename: redsocks2_0.60-2_ramips_24kec.ipk
-Size: 50698
-MD5Sum: 6a4f1cce9cda4738834c383aec0abff4
-SHA256sum: ec3f64c5788b00a8a79fbaf22229b9782a8675237ef4dec392e2c0fc875636a4
+Size: 50719
+MD5Sum: 84cf14c38ad571b1cbcacc28086c6df5
+SHA256sum: 9c1a25f9af1c07625e46f1a7ca9aca53d88c7bc4f15c24518f9929d7164c9397
 Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
 
 Package: shadowsocks-libev-polarssl
@@ -271,11 +271,11 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 238869
+Installed-Size: 238867
 Filename: shadowsocks-libev-polarssl_2.4.3-1_ramips_24kec.ipk
-Size: 238940
-MD5Sum: 2e2faa7db66ac1e8152399805fab41f6
-SHA256sum: 58112fa52065fd1fc7b4912a01794566478c9e7767ddf687e3c11b903896a4d2
+Size: 238941
+MD5Sum: c3e5830ec916bed41792dadbdc6e2ca5
+SHA256sum: 45e5e2325e7c4ca84553b5ddae15ec6f437f5edf56a6747fff72ebb52d9cf301
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks-libev-spec-polarssl
@@ -287,11 +287,11 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 158324
+Installed-Size: 158323
 Filename: shadowsocks-libev-spec-polarssl_2.4.3-1_ramips_24kec.ipk
-Size: 158438
-MD5Sum: d65838ae3937068225e5d4806d5c6a9d
-SHA256sum: bbc7d39df2e8c4e188a2886e03a88d3b22f4df0d8684d5904a0492a87d809dc5
+Size: 158474
+MD5Sum: 169afc5803d10dc4d5a73f98bd954d4f
+SHA256sum: 328d6a7bd1570b4ae0624902bb999ca8cb50332e691c4e83095011cbb60e44d9
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks-libev-spec
@@ -305,9 +305,9 @@ Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ramips_24kec
 Installed-Size: 156997
 Filename: shadowsocks-libev-spec_2.4.3-1_ramips_24kec.ipk
-Size: 157523
-MD5Sum: f9e440b55f04ddfa0d2f8f02ef86dad7
-SHA256sum: 5422510522283dc2ce9137d82e1ac77c51a2d26cf93ec3590c0a9dcbc0291b93
+Size: 157475
+MD5Sum: af7cc4798b9307e9e09c1bc317c1e11f
+SHA256sum: 605397bd829d02a5b88a64b7791bc71f18c9fde892d6727cd871c9655a9c1832
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
 Package: shadowsocks-libev
@@ -319,10 +319,10 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: Max Lv <max.c.lv@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 237218
+Installed-Size: 237217
 Filename: shadowsocks-libev_2.4.3-1_ramips_24kec.ipk
-Size: 237355
-MD5Sum: 26985b780e6cc76b15cc0af450c26a1c
-SHA256sum: f8c0fbefe619f8786a8f5c5cc5760fcf99ac145892efb4949f3470df36621e50
+Size: 237365
+MD5Sum: 5164306858ee9a1e5a564a64f6ee22c3
+SHA256sum: ca70d040ce055b6720565721129e9c583e3166fd945c59f86e0a33e6507dae78
 Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
 
